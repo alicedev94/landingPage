@@ -4,7 +4,6 @@ const content = document.getElementById("content");
 const fecthData = async (urlApi) => {
   const data = await fetch(urlApi);
   const character = await data.json();
-  console.log(character);
   return character;
 };
 
